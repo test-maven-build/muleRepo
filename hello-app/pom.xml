@@ -29,9 +29,9 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-						<username>neha_cloud_02</username>
-						<password>sunaksharma1607</password>
-						<applicationName>@Rajajipuram1</applicationName>
+						<username>sunaksharma1607</username>
+						<password>@Rajajipuram1</password>
+						<applicationName>hello-app-test</applicationName>
 						<environment>Sandbox</environment>
 						<properties>
 							<http.port>8399</http.port>
