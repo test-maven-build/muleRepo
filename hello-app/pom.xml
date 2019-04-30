@@ -30,8 +30,8 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>neha_cloud_02</username>
-						<password>@July16071990#</password>
-						<applicationName>hello-app-test</applicationName>
+						<password>sunaksharma1607</password>
+						<applicationName>@Rajajipuram1</applicationName>
 						<environment>Sandbox</environment>
 						<properties>
 							<http.port>8399</http.port>
