@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="hello-app-test-suite.xml" />
+	<munit:test name="hello-app-test-suite-hello-appFlowTest" description="Test" doc:id="b529ea84-0609-448f-b7d8-21bfafac2d3a" >
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to hello-appFlow" doc:id="437750cb-c31f-443a-857f-e812a7f56e79" name="hello-appFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="be728a26-fbb5-40ec-a417-dc700fe20044" expression="#[payload]" is='#[MunitTools::equalTo("Hello World")]' message="Payload is not Hello World"/>
+		</munit:validation>
+	</munit:test>
+
+</mule>
