@@ -34,7 +34,7 @@
 						<applicationName>hello-app-test</applicationName>
 						<environment>Sandbox</environment>
 						<properties>
-							<http.port>8399</http.port>
+							<key>value</key>
 						</properties>
 					</cloudHubDeployment>
 				<classifier>mule-application</classifier>
